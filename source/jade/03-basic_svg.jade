@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Basic SVG Shape
+  body
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js", charset="utf-8")
+    script
+      |  var canvas = d3.select('body')
+      |                 .append('svg')
+      |                 .attr('width', 500)
+      |                 .attr('height', 500),
+      |      circle = canvas.append('circle')
+      |                     .attr('cx', 250)
+      |                     .attr('cy', 250)
+      |                     .attr('r', 50)
+      |                     .attr('fill', '#f00'),
+      |      rect = canvas.append('rect')
+      |                   .attr('width', 100)
+      |                   .attr('height', 50),
+      |      line = canvas.append('line')
+      |                   .attr('x1', 0)
+      |                   .attr('y1', 100)
+      |                   .attr('x2', 400)
+      |                   .attr('y2', 400)
+      |                   .attr('stroke', '#0f0')
+      |                   .attr('stroke-width', 10);
